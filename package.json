@@ -1,0 +1,31 @@
+{
+  "name": "mvv-line",
+  "version": "0.1.0",
+  "description": "CSS styles for MVV transport services in Munich",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass ./sass/_mvv-line.scss styles/mvv-line.css --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schaechinger/mvv-line.git"
+  },
+  "keywords": [
+    "mvv",
+    "mvg",
+    "transport",
+    "sbahn",
+    "ubahn",
+    "muenchen",
+    "munich"
+  ],
+  "author": "Manuel Schaechinger <manuel@schaechinger.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/schaechinger/mvv-line/issues"
+  },
+  "homepage": "https://schaechinger.com/projekte/#mvv-line",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}

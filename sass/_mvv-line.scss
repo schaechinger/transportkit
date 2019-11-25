@@ -1,0 +1,33 @@
+/*!
+MVV Line 0.1.0
+Copyright 2019 Manuel Schaechinger
+https://schaechinger.com/mvv-line
+MIT License
+*/
+
+.mvv-line {
+  @import 'mvv-line/colors';
+  @import 'mvv-line/bus';
+  @import 'mvv-line/tram';
+  @import 'mvv-line/sbahn';
+  @import 'mvv-line/ubahn';
+
+  border: 0.078125em solid $borderColor;
+  color: $textColor;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 0.46875em;
+  min-width: 3.125em;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:not(:last-of-type) {
+    margin-right: 0.46875em;
+  }
+
+  &--contrast {
+    border-color: $textColor;
+  }
+}
