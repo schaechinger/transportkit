@@ -1,30 +1,42 @@
 {
-  "name": "mvv-line",
-  "version": "0.1.0",
-  "description": "CSS styles for MVV transport services in Munich",
+  "name": "transportkit",
+  "version": "0.2.0",
+  "description": "CSS styles for public transport services in Munich",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass ./sass/_mvv-line.scss styles/mvv-line.min.css --output-style compressed"
+    "build": "npm run build:all && npm run build:munich && npm run build:nyc",
+    "build:all": "node-sass sass/all.scss styles/transportkit.min.css --output-style compressed",
+    "build:munich": "node-sass sass/munich.scss styles/transportkit-munich.min.css --output-style compressed",
+    "build:nyc": "node-sass sass/nyc.scss styles/transportkit-nyc.min.css --output-style compressed"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/schaechinger/mvv-line.git"
+    "url": "git+https://github.com/schaechinger/transportkit.git"
   },
   "keywords": [
     "mvv",
     "mvg",
     "transport",
+    "public transport",
     "sbahn",
     "ubahn",
+    "subway",
+    "tube",
+    "metro",
+    "underground",
+    "tube",
     "muenchen",
-    "munich"
+    "munich",
+    "london",
+    "nyc",
+    "mta"
   ],
   "author": "Manuel Schaechinger <manuel@schaechinger.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/schaechinger/mvv-line/issues"
+    "url": "https://github.com/schaechinger/transportkit/issues"
   },
-  "homepage": "https://schaechinger.com/projekte/#mvv-line",
+  "homepage": "https://schaechinger.com/transportkit",
   "dependencies": {
     "node-sass": "^4.13.0"
   }
