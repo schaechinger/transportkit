@@ -4,7 +4,7 @@
   "description": "CSS styles for MVV transport services in Munich",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass ./sass/_mvv-line.scss styles/mvv-line.css --output-style compressed"
+    "build": "node-sass ./sass/_mvv-line.scss styles/mvv-line.min.css --output-style compressed"
   },
   "repository": {
     "type": "git",

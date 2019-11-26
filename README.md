@@ -1,4 +1,4 @@
-# MMV Line
+# MVV Line
 
 ## Example Page
 
@@ -7,7 +7,7 @@ You can have a look at the styles here: [schaechinger.com/mvv-line](https://www.
 
 ## Use CSS
 
-The current version in proper CSS format is located in `./styles/mvv-line.css`. \
+The current version in proper CSS format is located in `./styles/mvv-line.min.css`. \
 If you cloned the repository and edited the SASS files make sure you build tghe project first.
 
 
