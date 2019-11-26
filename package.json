@@ -1,7 +1,7 @@
 {
   "name": "transportkit",
   "version": "0.2.0",
-  "description": "CSS styles for public transport services in Munich",
+  "description": "CSS styles for public transport services in Munich & NYC",
   "main": "index.js",
   "scripts": {
     "build": "npm run build:all && npm run build:munich && npm run build:nyc",
