@@ -5,6 +5,7 @@
 * Berlin
 * London
 * Munich
+* Nuremberg
 * New York City
 
 ## Example Page
