@@ -1,5 +1,11 @@
 # TransportKit
 
+## Supported Cities
+
+* London
+* Munich
+* New York City
+
 ## Example Page
 
 You can have a look at the styles here: [schaechinger.com/transportkit](https://www.schaechinger.com/tansportkit).
@@ -34,3 +40,4 @@ Please note that some icons may have restrictions or require a license prior to 
 Please read the guidelines of the companies before using them.
 
 * [New York City (MTA)](http://web.mta.info/developers/license.html)
+* [London (TfL)](https://tfl.gov.uk/info-for/suppliers-and-contractors/product-licensing)
