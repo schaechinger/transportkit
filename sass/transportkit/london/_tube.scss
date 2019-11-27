@@ -1,0 +1,52 @@
+&--bakerloo {
+  background-color: $tubeBakerloo;
+}
+&--central {
+  background-color: $tubeCentral;
+}
+&--circle {
+  background-color: $tubeCircle;
+}
+&--district {
+  background-color: $tubeDistrict;
+}
+&--hammersmith {
+  background-color: $tubeHammersmith;
+  color: $tubePiccadilly;
+}
+&--jubilee {
+  background-color: $tubeJubilee;
+}
+&--metropolitan {
+  background-color: $tubeMetropolitan;
+}
+&--northern {
+  background-color: $tubeNorthern;
+}
+&--piccadilly {
+  background-color: $tubePiccadilly;
+}
+&--victoria {
+  background-color: $tubeVictoria;
+}
+&--waterloo {
+  background-color: $tubeWaterloo;
+}
+&--overground {
+  background-color: $overground;
+}
+&--tflrail {
+  background-color: $tflRail;
+}
+&--dlr {
+  background-color: $dlr;
+}
+&--tram {
+  background-color: $tram;
+}
+
+&--circle,
+&--victoria,
+&--waterloo {
+  color: $textDark;
+}

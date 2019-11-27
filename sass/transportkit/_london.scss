@@ -1,27 +1,27 @@
-&-nyc {
-  @import "nyc/colors";
-  @import "nyc/subway";
+&-london {
+  @import "london/colors";
+  @import "london/tube";
 
-  border: 0.125em solid transparent;
-  border-radius: 10em;
-  box-sizing: content-box;
+  
+  border: 0.15625em solid transparent;
+  border-radius: 0.2em;
+  box-sizing: border-box;
   color: $textLight;
   display: inline-block;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: bold;
-  line-height: 1.5em;
+  line-height: 1em;
   margin: 0;
   overflow-wrap: break-word;
-  padding: 0.0625em;
-  width: 1.5em;
+  padding: 0 0.46875em;
+  min-width: 8em;
   text-align: center;
   text-size-adjust: 100%;
-  text-transform: uppercase;
 
   &:not(:last-of-type) {
-    margin-bottom: 0.5em;
-    margin-right: 0.5em;
+    margin-bottom: 0.46875em;
+    margin-right: 0.46875em;
   }
 
   &--contrast {
