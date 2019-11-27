@@ -2,6 +2,7 @@
 
 ## Supported Cities
 
+* Berlin
 * London
 * Munich
 * New York City
@@ -39,5 +40,6 @@ npm run build
 Please note that some icons may have restrictions or require a license prior to use. \
 Please read the guidelines of the companies before using them.
 
-* [New York City (MTA)](http://web.mta.info/developers/license.html)
+* [Berlin (BVG)](https://www.bvg.de/de/Service/Kundenservice/BVG-Icons)
 * [London (TfL)](https://tfl.gov.uk/info-for/suppliers-and-contractors/product-licensing)
+* [New York City (MTA)](http://web.mta.info/developers/license.html)

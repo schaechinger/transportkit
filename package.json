@@ -1,11 +1,12 @@
 {
   "name": "transportkit",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "CSS styles for public transport services in Munich & NYC",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build:all && npm run build:london && npm run build:munich && npm run build:nyc",
+    "build": "npm run build:all && npm run build:berlin && npm run build:london && npm run build:munich && npm run build:nyc",
     "build:all": "node-sass sass/all.scss styles/transportkit.min.css --output-style compressed",
+    "build:berlin": "node-sass sass/berlin.scss styles/transportkit-berlin.min.css --output-style compressed",
     "build:london": "node-sass sass/london.scss styles/transportkit-london.min.css --output-style compressed",
     "build:munich": "node-sass sass/munich.scss styles/transportkit-munich.min.css --output-style compressed",
     "build:nyc": "node-sass sass/nyc.scss styles/transportkit-nyc.min.css --output-style compressed"
