@@ -1,15 +1,16 @@
 {
   "name": "transportkit",
-  "version": "0.2.5",
-  "description": "CSS styles for public transport services in Munich, NYC, London, Berlin & Nuremberg",
+  "version": "0.2.6",
+  "description": "CSS styles for public transport services in Munich, NYC, London, Berlin, Regensburg & Nuremberg",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build:all && npm run build:berlin && npm run build:london && npm run build:munich && npm run build:nuremberg && npm run build:nyc",
+    "build": "npm run build:all && npm run build:berlin && npm run build:london && npm run build:munich && npm run build:nuremberg && npm run build:nyc && npm run build:regensburg",
     "build:all": "node-sass sass/all.scss styles/transportkit.min.css --output-style compressed",
     "build:berlin": "node-sass sass/berlin.scss styles/transportkit-berlin.min.css --output-style compressed",
     "build:london": "node-sass sass/london.scss styles/transportkit-london.min.css --output-style compressed",
     "build:munich": "node-sass sass/munich.scss styles/transportkit-munich.min.css --output-style compressed",
     "build:nuremberg": "node-sass sass/nuremberg.scss styles/transportkit-nuremberg.min.css --output-style compressed",
+    "build:regensburg": "node-sass sass/regensburg.scss styles/transportkit-regensburg.min.css --output-style compressed",
     "build:nyc": "node-sass sass/nyc.scss styles/transportkit-nyc.min.css --output-style compressed"
   },
   "repository": {
@@ -35,7 +36,9 @@
     "vgn",
     "london",
     "nyc",
-    "mta"
+    "mta",
+    "regensburg",
+    "rvv"
   ],
   "author": "Manuel Schaechinger <manuel@schaechinger.com>",
   "license": "MIT",
