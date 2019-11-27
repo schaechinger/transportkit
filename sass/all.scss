@@ -1,13 +1,9 @@
-/*!
-TransportKit 0.2.1
-Copyright 2019 Manuel Schaechinger
-https://schaechinger.com/transportkit
-MIT License
-*/
+@import "comment";
 
 .transportkit {
   @import "transportkit/berlin";
   @import "transportkit/london";
   @import "transportkit/munich";
+  @import "transportkit/nuremberg";
   @import "transportkit/nyc";
 }
