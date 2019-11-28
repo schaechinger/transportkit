@@ -8,25 +8,39 @@
 &--s1 {
   background-color: $s1;
 }
-&--s2 {
+&--s2,
+&--s25,
+&--s26 {
   background-color: $s2;
 }
 &--s3 {
   background-color: $s3;
 }
-&--s4 {
-  background-color: $s4;
+&--s41,
+&--s45 {
+  background-color: $s41;
 }
-&--s6 {
-  background-color: $s6;
+&--s42 {
+  background-color: $s42;
 }
-&--s7 {
+&--s46,
+&--s47 {
+  background-color: $s46;
+}
+&--s5 {
+  background-color: $s5;
+}
+&--s {
+  background-color: $s;
+}
+&--s7,
+&--s75 {
   background-color: $s7;
 }
-&--s8 {
+&--s8,
+&--s85 {
   background-color: $s8;
-  color: $s8Text;
 }
-&--s20 {
-  background-color: $s20;
+&--s9 {
+  background-color: $s9;
 }

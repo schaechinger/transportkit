@@ -1,10 +1,14 @@
-&--bus {
-  background-color: $bus;
+&--bus,
+&--b {
+  background-color: $b;
 }
-&--busX,
-&--bus-express {
-  background-color: $busX;
+&--bus-express,
+&--busx,
+&--bx {
+  background-color: $bX;
 }
-&--bus-metro {
-  background-color: $busMetro;
+&--bus-metro,
+&--busm,
+&--bm {
+  background-color: $bM;
 }

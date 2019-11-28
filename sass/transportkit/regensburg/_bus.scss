@@ -1,3 +1,4 @@
+&--bus,
 &--b,
 &--bc,
 &--bc1,
@@ -22,10 +23,11 @@
 &--b43 {
   background-color: $b;
 }
-&--b-extern {
+&--bus-suburb,
+&--bsub {
   background-color: $bExtern;
 }
-&--bA {
+&--ba {
   background-color: $bA;
 }
 &--bx4 {

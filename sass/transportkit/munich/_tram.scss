@@ -1,69 +1,71 @@
-&--tram {
-  background-color: $tram;
+&--tram,
+&--t {
+  background-color: $t;
 }
-&--tram-peak {
+&--tram-peak,
+&--tp {
   background-color: $textLight;
-  color: $tram;
+  color: $t;
   
   &,
   &.transportkit-munich--contrast {
-    border-color: $tram;
+    border-color: $t;
   }
 }
-&--tram12 {
-  background-color: $tram12;
+&--t12 {
+  background-color: $t12;
 }
-&--tram15 {
+&--t15 {
   background-color: $textLight;
-  color: $tram25;
+  color: $t25;
   
   &,
   &.transportkit-munich--contrast {
-    border-color: $tram25;
+    border-color: $t25;
   }
 }
-&--tram16 {
-  background-color: $tram16;
+&--t16 {
+  background-color: $t16;
 }
-&--tram17 {
-  background-color: $tram17;
+&--t17 {
+  background-color: $t17;
 }
-&--tram18 {
-  background-color: $tram18;
+&--t18 {
+  background-color: $t18;
 }
-&--tram19 {
-  background-color: $tram19;
+&--t19 {
+  background-color: $t19;
 }
-&--tram20 {
-  background-color: $tram20;
+&--t20 {
+  background-color: $t20;
 }
-&--tram21 {
-  background-color: $tram21;
+&--t21 {
+  background-color: $t21;
 }
-&--tram22 {
+&--t22 {
   background-color: $textLight;
-  color: $tram20;
+  color: $t20;
 
   &,
   &.transportkit-munich--contrast {
-    border-color: $tram20;
+    border-color: $t20;
   }
 }
-&--tram23 {
-  background-color: $tram23;
+&--t23 {
+  background-color: $t23;
 }
-&--tram25 {
-  background-color: $tram25;
+&--t25 {
+  background-color: $t25;
 }
-&--tram27 {
-  background-color: $tram27;
+&--t27 {
+  background-color: $t27;
 }
-&--tram28 {
+&--t28 {
   background-color: $textLight;
-  color: $tram27;
+  color: $t27;
 
   &,
   &.transportkit-munich--contrast {
-    border-color: $tram27;
+    border-color: $t27;
   }
 }
