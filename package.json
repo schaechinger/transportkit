@@ -1,44 +1,41 @@
 {
   "name": "transportkit",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "CSS styles for public transport services in Munich, NYC, London, Berlin, Regensburg & Nuremberg",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build:all && npm run build:berlin && npm run build:london && npm run build:munich && npm run build:nuremberg && npm run build:nyc && npm run build:regensburg",
+    "build": "npm run build:all && npm run build:berlin && npm run build:london && npm run build:munich && npm run build:nuremberg && npm run build:nyc && npm run build:regensburg && npm run build:salzburg",
     "build:all": "node-sass sass/all.scss styles/transportkit.min.css --output-style compressed",
     "build:berlin": "node-sass sass/berlin.scss styles/transportkit-berlin.min.css --output-style compressed",
     "build:london": "node-sass sass/london.scss styles/transportkit-london.min.css --output-style compressed",
     "build:munich": "node-sass sass/munich.scss styles/transportkit-munich.min.css --output-style compressed",
     "build:nuremberg": "node-sass sass/nuremberg.scss styles/transportkit-nuremberg.min.css --output-style compressed",
+    "build:nyc": "node-sass sass/nyc.scss styles/transportkit-nyc.min.css --output-style compressed",
     "build:regensburg": "node-sass sass/regensburg.scss styles/transportkit-regensburg.min.css --output-style compressed",
-    "build:nyc": "node-sass sass/nyc.scss styles/transportkit-nyc.min.css --output-style compressed"
+    "build:salzburg": "node-sass sass/salzburg.scss styles/transportkit-salzburg.min.css --output-style compressed"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/schaechinger/transportkit.git"
+    "url": "https://github.com/schaechinger/transportkit.git"
   },
   "keywords": [
-    "mvv",
-    "mvg",
     "transport",
     "public transport",
     "sbahn",
     "ubahn",
     "subway",
-    "tube",
-    "metro",
     "underground",
     "tube",
-    "muenchen",
-    "munich",
-    "nuernberg",
-    "nuremberg",
-    "vgn",
-    "london",
-    "nyc",
+    "metro",
+    "bus",
+    "tram",
+    "mvv",
+    "mvg",
     "mta",
-    "regensburg",
-    "rvv"
+    "vgn",
+    "bvg",
+    "rvv",
+    "svv"
   ],
   "author": "Manuel Schaechinger <manuel@schaechinger.com>",
   "license": "MIT",
