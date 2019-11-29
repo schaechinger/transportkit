@@ -1,5 +1,9 @@
 &-nyc {
+  @import "mixins/line";
+
   @import "nyc/colors";
+  @import "defaults/global";
+
   @import "nyc/subway";
 
   border: 0.125em solid transparent;
@@ -18,13 +22,4 @@
   text-align: center;
   text-size-adjust: 100%;
   text-transform: uppercase;
-
-  &:not(:last-of-type) {
-    margin-bottom: 0.5em;
-    margin-right: 0.5em;
-  }
-
-  &--contrast {
-    border-color: $textLight;
-  }
 }

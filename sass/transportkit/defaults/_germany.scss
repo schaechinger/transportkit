@@ -1,10 +1,12 @@
 $textLight: #fff;
-$textDark: #000;
+$textDark: #111;
 $borderLight: #848484;
 
 $s: #006f35;
 
 & {
+  @import "global";
+
   border: 0.125em solid transparent;
   box-sizing: border-box;
   color: $textLight;
@@ -19,13 +21,4 @@ $s: #006f35;
   text-align: center;
   text-size-adjust: 100%;
   text-transform: uppercase;
-
-  &:not(:last-of-type) {
-    margin-bottom: 0.5em;
-    margin-right: 0.5em;
-  }
-
-  &--contrast {
-    border-color: $textLight;
-  }
 }

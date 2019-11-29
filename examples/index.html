@@ -4,42 +4,28 @@
   <title>TransportKit Examples</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
   <link rel="stylesheet" href="../styles/transportkit.min.css">
-  <!-- https://static.schaechinger.com/projects/transportkit/latest/transportkit.min.css"> -->
-  <style>
-    body {
-      font: 1rem Helvetica, Arial, sans-serif;
-      margin: 0;
-      padding: 1.25rem;
-    }
-
-    h2 {
-      margin-top: 3rem;
-    }
-
-    h3 {
-      margin-top: 1rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <h1>TransportKit Examples</h1>
 
-  <h2>Available Cities</h2>
-
-  <ul>
-    <li><a href="#munich">Munich</a></li>
-    <li><a href="#berlin">Berlin</a></li>
-    <li><a href="#london">London</a></li>
-    <li><a href="#nyc">New York City</a></li>
-    <li><a href="#nuremberg">Nuremberg</a></li>
-    <li><a href="#regensburg">Regensburg</a></li>
-    <li><a href="#salzburg">Salzburg</a></li>
+  <ul class="city-select">
+    <li class="munich"><a href="#munich">Munich</a></li>
+    <li class="berlin"><a href="#berlin">Berlin</a></li>
+    <li class="london"><a href="#london">London</a></li>
+    <li class="nyc"><a href="#nyc">New York City</a></li>
+    <li class="nuremberg"><a href="#nuremberg">Nuremberg</a></li>
+    <li class="regensburg"><a href="#regensburg">Regensburg</a></li>
+    <li class="salzburg"><a href="#salzburg">Salzburg</a></li>
   </ul>
 
   <hr>
 
-  <div class="munich">
+  <input type="checkbox" id="mode-toggle" name="mode-toggle">
+  <label for="mode-toggle">Dark mode (contrast)</label>
+
+  <div class="city city-munich">
     <h2 id="munich">Munich</h2>
 
     <h3>U-Bahn</h3>
@@ -61,35 +47,37 @@
     <span class="transportkit-munich transportkit-munich--s4" title=".transportkit-munich--s4">S4</span>
     <span class="transportkit-munich transportkit-munich--s6" title=".transportkit-munich--s6">S6</span>
     <span class="transportkit-munich transportkit-munich--s7" title=".transportkit-munich--s7">S7</span>
-    <span class="transportkit-munich transportkit-munich--s8" title=".transportkit-munich--s8">S8</span>
+    <span class="transportkit-munich transportkit-munich--s8" title=".transportkit-munich--s8">S8</span><br>
+    <span class="transportkit-munich transportkit-munich--s20" title=".transportkit-munich--s20">S20</span>
 
     <h3>Busses</h3>
-    <span class="transportkit-munich transportkit-munich--bus">132</span>
-    <span class="transportkit-munich transportkit-munich--bus">263</span>
-    <span class="transportkit-munich transportkit-munich--busX">X30</span>
-    <span class="transportkit-munich transportkit-munich--bus-metro">54</span>
+    <span class="transportkit-munich transportkit-munich--bus" title=".transportkit-munich--bus">132</span>
+    <span class="transportkit-munich transportkit-munich--bus" title=".transportkit-munich--bus">263</span>
+    <span class="transportkit-munich transportkit-munich--bus-express" title=".transportkit-munich--busx">X30</span>
+    <span class="transportkit-munich transportkit-munich--bus-metro" title=".transportkit-munich--bus-metro">54</span>
 
     <h3>Tram</h3>
     <h4>Default Style</h4>
-    <span class="transportkit-munich transportkit-munich--tram">17</span>
-    <span class="transportkit-munich transportkit-munich--tram">N20</span>
-    <span class="transportkit-munich transportkit-munich--tram-peak">22</span>
-    <h4>Collored Style</h4>
-    <span class="transportkit-munich transportkit-munich--tram12">12</span>
-    <span class="transportkit-munich transportkit-munich--tram15">15</span>
-    <span class="transportkit-munich transportkit-munich--tram17">17</span>
-    <span class="transportkit-munich transportkit-munich--tram18">18</span><br>
-    <span class="transportkit-munich transportkit-munich--tram19">19</span>
-    <span class="transportkit-munich transportkit-munich--tram20">20</span>
-    <span class="transportkit-munich transportkit-munich--tram21">21</span>
-    <span class="transportkit-munich transportkit-munich--tram22">22</span><br>
-    <span class="transportkit-munich transportkit-munich--tram23">23</span>
-    <span class="transportkit-munich transportkit-munich--tram25">25</span>
-    <span class="transportkit-munich transportkit-munich--tram27">27</span>
-    <span class="transportkit-munich transportkit-munich--tram28">28</span>
+    <span class="transportkit-munich transportkit-munich--tram" title=".transportkit-munich--tram">17</span>
+    <span class="transportkit-munich transportkit-munich--tram" title=".transportkit-munich--tram">N20</span>
+    <span class="transportkit-munich transportkit-munich--tram-peak" title=".transportkit-munich--tram-peak">22</span>
+    <h4>Colored Style</h4>
+    <span class="transportkit-munich transportkit-munich--t12" title=".transportkit-munich--t12">12</span>
+    <span class="transportkit-munich transportkit-munich--t15" title=".transportkit-munich--t15">15</span>
+    <span class="transportkit-munich transportkit-munich--t16" title=".transportkit-munich--t16">16</span>
+    <span class="transportkit-munich transportkit-munich--t17" title=".transportkit-munich--t17">17</span><br>
+    <span class="transportkit-munich transportkit-munich--t18" title=".transportkit-munich--t18">18</span>
+    <span class="transportkit-munich transportkit-munich--t19" title=".transportkit-munich--t19">19</span>
+    <span class="transportkit-munich transportkit-munich--t20" title=".transportkit-munich--t20">20</span>
+    <span class="transportkit-munich transportkit-munich--t21" title=".transportkit-munich--t21">21</span><br>
+    <span class="transportkit-munich transportkit-munich--t22" title=".transportkit-munich--t22">22</span>
+    <span class="transportkit-munich transportkit-munich--t23" title=".transportkit-munich--t23">23</span>
+    <span class="transportkit-munich transportkit-munich--t25" title=".transportkit-munich--t25">25</span>
+    <span class="transportkit-munich transportkit-munich--t27" title=".transportkit-munich--t27">27</span><br>
+    <span class="transportkit-munich transportkit-munich--t28" title=".transportkit-munich--t28">28</span>
   </div>
 
-  <div class="berlin">
+  <div class="city city-berlin">
     <h2 id="berlin">Berlin</h2>
 
     <h3>U-Bahn</h3>
@@ -104,63 +92,94 @@
     <span class="transportkit-berlin transportkit-berlin--u7" title=".transportkit-berlin--u7">U7</span>
     <span class="transportkit-berlin transportkit-berlin--u8" title=".transportkit-berlin--u8">U8</span>
     <span class="transportkit-berlin transportkit-berlin--u9" title=".transportkit-berlin--u9">U9</span>
+
+    <h3>S-Bahn</h3>
+    <span class="transportkit-berlin transportkit-berlin--s" title=".transportkit-berlin--s">S</span>
+    <span class="transportkit-berlin transportkit-berlin--s1" title=".transportkit-berlin--s1">S1</span>
+    <span class="transportkit-berlin transportkit-berlin--s2" title=".transportkit-berlin--s2">S2</span>
+    <span class="transportkit-berlin transportkit-berlin--s25" title=".transportkit-berlin--s25">S25</span><br>
+    <span class="transportkit-berlin transportkit-berlin--s26" title=".transportkit-berlin--s26">S26</span>
+    <span class="transportkit-berlin transportkit-berlin--s3" title=".transportkit-berlin--s3">S3</span>
+    <span class="transportkit-berlin transportkit-berlin--s41" title=".transportkit-berlin--s41">S41</span>
+    <span class="transportkit-berlin transportkit-berlin--s42" title=".transportkit-berlin--s42">S42</span><br>
+    <span class="transportkit-berlin transportkit-berlin--s45" title=".transportkit-berlin--s45">S45</span>
+    <span class="transportkit-berlin transportkit-berlin--s46" title=".transportkit-berlin--s46">S46</span>
+    <span class="transportkit-berlin transportkit-berlin--s47" title=".transportkit-berlin--s47">S47</span>
+    <span class="transportkit-berlin transportkit-berlin--s5" title=".transportkit-berlin--s5">S5</span><br>
+    <span class="transportkit-berlin transportkit-berlin--s7" title=".transportkit-berlin--s7">S7</span>
+    <span class="transportkit-berlin transportkit-berlin--s75" title=".transportkit-berlin--s75">S75</span>
+    <span class="transportkit-berlin transportkit-berlin--s8" title=".transportkit-berlin--s8">S8</span>
+    <span class="transportkit-berlin transportkit-berlin--s85" title=".transportkit-berlin--s85">S85</span><br>
+    <span class="transportkit-berlin transportkit-berlin--s9" title=".transportkit-berlin--s9">S9</span>
   </div>
 
-  <div class="london">
+  <div class="city city-london">
     <h2 id="london">London</h2>
 
     <h3>Tube</h3>
-    <span class="transportkit-london transportkit-london--bakerloo">Bakerloo</span>
-    <span class="transportkit-london transportkit-london--central">Central</span><br>
-    <span class="transportkit-london transportkit-london--circle">Circle</span>
-    <span class="transportkit-london transportkit-london--district">District</span><br>
-    <span class="transportkit-london transportkit-london--hammersmith">Hammersmith & City</span>
-    <span class="transportkit-london transportkit-london--jubilee">Jubilee</span><br>
-    <span class="transportkit-london transportkit-london--metropolitan">Metropolitan</span>
-    <span class="transportkit-london transportkit-london--northern">Northern</span><br>
-    <span class="transportkit-london transportkit-london--piccadilly">Piccadilly</span>
-    <span class="transportkit-london transportkit-london--victoria">Victoria</span><br>
-    <span class="transportkit-london transportkit-london--waterloo">Waterloo & City</span>
+    <span class="transportkit-london transportkit-london--bakerloo"
+      title=".transportkit-london--bakerloo">Bakerloo</span>
+    <span class="transportkit-london transportkit-london--central"
+      title=".transportkit-london--central">Central</span><br>
+    <span class="transportkit-london transportkit-london--circle" title=".transportkit-london--circle">Circle</span>
+    <span class="transportkit-london transportkit-london--district"
+      title=".transportkit-london--district">District</span><br>
+    <span class="transportkit-london transportkit-london--hammersmith"
+      title=".transportkit-london--hammersmith">Hammersmith & City</span>
+    <span class="transportkit-london transportkit-london--jubilee"
+      title=".transportkit-london--jubilee">Jubilee</span><br>
+    <span class="transportkit-london transportkit-london--metropolitan"
+      title=".transportkit-london--metropolitan">Metropolitan</span>
+    <span class="transportkit-london transportkit-london--northern"
+      title=".transportkit-london--northern">Northern</span><br>
+    <span class="transportkit-london transportkit-london--piccadilly"
+      title=".transportkit-london--piccadilly">Piccadilly</span>
+    <span class="transportkit-london transportkit-london--victoria"
+      title=".transportkit-london--victoria">Victoria</span><br>
+    <span class="transportkit-london transportkit-london--waterloo" title=".transportkit-london--waterloo">Waterloo &
+      City</span>
 
     <h3>Overground</h3>
-    <span class="transportkit-london transportkit-london--overground">Overground</span>
-    <span class="transportkit-london transportkit-london--tflrail">TfL Rail</span><br>
-    <span class="transportkit-london transportkit-london--dlr">DLR</span>
-    <span class="transportkit-london transportkit-london--tram">Tram</span>
+    <span class="transportkit-london transportkit-london--overground"
+      title=".transportkit-london--overground">Overground</span>
+    <span class="transportkit-london transportkit-london--tflrail" title=".transportkit-london--tflrail">TfL
+      Rail</span><br>
+    <span class="transportkit-london transportkit-london--dlr" title=".transportkit-london--dlr">DLR</span>
+    <span class="transportkit-london transportkit-london--tram" title=".transportkit-london--tram">Tram</span>
   </div>
 
-  <div class="nyc">
+  <div class="city city-nyc">
     <h2 id="nyc">New York City</h2>
 
     <h3>Subway</h3>
-    <span class="transportkit-nyc transportkit-nyc--1">1</span>
-    <span class="transportkit-nyc transportkit-nyc--2">2</span>
-    <span class="transportkit-nyc transportkit-nyc--3">3</span>
-    <span class="transportkit-nyc transportkit-nyc--4">4</span>
-    <span class="transportkit-nyc transportkit-nyc--5">5</span><br>
-    <span class="transportkit-nyc transportkit-nyc--6">6</span>
-    <span class="transportkit-nyc transportkit-nyc--6d">6</span>
-    <span class="transportkit-nyc transportkit-nyc--7">7</span>
-    <span class="transportkit-nyc transportkit-nyc--7d">7</span>
-    <span class="transportkit-nyc transportkit-nyc--a">A</span><br>
-    <span class="transportkit-nyc transportkit-nyc--c">C</span>
-    <span class="transportkit-nyc transportkit-nyc--e">E</span>
-    <span class="transportkit-nyc transportkit-nyc--b">B</span>
-    <span class="transportkit-nyc transportkit-nyc--d">D</span>
-    <span class="transportkit-nyc transportkit-nyc--f">F</span><br>
-    <span class="transportkit-nyc transportkit-nyc--m">M</span>
-    <span class="transportkit-nyc transportkit-nyc--g">G</span>
-    <span class="transportkit-nyc transportkit-nyc--j">J</span>
-    <span class="transportkit-nyc transportkit-nyc--z">Z</span>
-    <span class="transportkit-nyc transportkit-nyc--l">L</span><br>
-    <span class="transportkit-nyc transportkit-nyc--s">S</span>
-    <span class="transportkit-nyc transportkit-nyc--n">N</span>
-    <span class="transportkit-nyc transportkit-nyc--q">Q</span>
-    <span class="transportkit-nyc transportkit-nyc--r">R</span>
-    <span class="transportkit-nyc transportkit-nyc--w">W</span>
+    <span class="transportkit-nyc transportkit-nyc--1" title=".transportkit-nyc--1">1</span>
+    <span class="transportkit-nyc transportkit-nyc--2" title=".transportkit-nyc--2">2</span>
+    <span class="transportkit-nyc transportkit-nyc--3" title=".transportkit-nyc--3">3</span>
+    <span class="transportkit-nyc transportkit-nyc--4" title=".transportkit-nyc--4">4</span>
+    <span class="transportkit-nyc transportkit-nyc--5" title=".transportkit-nyc--5">5</span><br>
+    <span class="transportkit-nyc transportkit-nyc--6" title=".transportkit-nyc--6">6</span>
+    <span class="transportkit-nyc transportkit-nyc--6d" title=".transportkit-nyc--6d">6</span>
+    <span class="transportkit-nyc transportkit-nyc--7" title=".transportkit-nyc--7">7</span>
+    <span class="transportkit-nyc transportkit-nyc--7d" title=".transportkit-nyc--7d">7</span>
+    <span class="transportkit-nyc transportkit-nyc--a" title=".transportkit-nyc--a">A</span><br>
+    <span class="transportkit-nyc transportkit-nyc--c" title=".transportkit-nyc--c">C</span>
+    <span class="transportkit-nyc transportkit-nyc--e" title=".transportkit-nyc--e">E</span>
+    <span class="transportkit-nyc transportkit-nyc--b" title=".transportkit-nyc--b">B</span>
+    <span class="transportkit-nyc transportkit-nyc--d" title=".transportkit-nyc--d">D</span>
+    <span class="transportkit-nyc transportkit-nyc--f" title=".transportkit-nyc--f">F</span><br>
+    <span class="transportkit-nyc transportkit-nyc--m" title=".transportkit-nyc--m">M</span>
+    <span class="transportkit-nyc transportkit-nyc--g" title=".transportkit-nyc--g">G</span>
+    <span class="transportkit-nyc transportkit-nyc--j" title=".transportkit-nyc--j">J</span>
+    <span class="transportkit-nyc transportkit-nyc--z" title=".transportkit-nyc--z">Z</span>
+    <span class="transportkit-nyc transportkit-nyc--l" title=".transportkit-nyc--l">L</span><br>
+    <span class="transportkit-nyc transportkit-nyc--s" title=".transportkit-nyc--s">S</span>
+    <span class="transportkit-nyc transportkit-nyc--n" title=".transportkit-nyc--n">N</span>
+    <span class="transportkit-nyc transportkit-nyc--q" title=".transportkit-nyc--q">Q</span>
+    <span class="transportkit-nyc transportkit-nyc--r" title=".transportkit-nyc--r">R</span>
+    <span class="transportkit-nyc transportkit-nyc--w" title=".transportkit-nyc--w">W</span>
   </div>
 
-  <div class="nuremberg">
+  <div class="city city-nuremberg">
     <h2 id="nuremberg">Nuremberg</h2>
 
     <h3>U-Bahn</h3>
@@ -176,12 +195,19 @@
     <span class="transportkit-nuremberg transportkit-nuremberg--s3" title=".transportkit-nuremberg--s3">S3</span><br>
     <span class="transportkit-nuremberg transportkit-nuremberg--s4" title=".transportkit-nuremberg--s4">S4</span>
 
-    <h3>Others</h3>
-    <span class="transportkit-nuremberg transportkit-nuremberg--tram" title=".transportkit-nuremberg--tram">4</span>
-    <span class="transportkit-nuremberg transportkit-nuremberg--r" title=".transportkit-nuremberg--r">R 9</span>
+    <h3>Tram</h3>
+    <span class="transportkit-nuremberg transportkit-nuremberg--t4" title=".transportkit-nuremberg--t4">4</span>
+    <span class="transportkit-nuremberg transportkit-nuremberg--t5" title=".transportkit-nuremberg--t5">5</span>
+    <span class="transportkit-nuremberg transportkit-nuremberg--t6" title=".transportkit-nuremberg--t6">6</span>
+    <span class="transportkit-nuremberg transportkit-nuremberg--t7" title=".transportkit-nuremberg--t7">7</span><br>
+    <span class="transportkit-nuremberg transportkit-nuremberg--t8" title=".transportkit-nuremberg--t8">8</span>
+
+    <h3>R-Bahn</h3>
+    <span class="transportkit-nuremberg transportkit-nuremberg--r9" title=".transportkit-nuremberg--r9">R 9</span>
+    <span class="transportkit-nuremberg transportkit-nuremberg--r31" title=".transportkit-nuremberg--r31">R 31</span>
   </div>
 
-  <div class="regensburg">
+  <div class="city city-regensburg">
     <h2 id="regensburg">Regensburg</h2>
 
     <h3>Busses</h3>
@@ -235,11 +261,11 @@
     <span class="transportkit-regensburg transportkit-regensburg--b43" title=".transportkit-regensburg--b43">43</span>
     <span class="transportkit-regensburg transportkit-regensburg--b77" title=".transportkit-regensburg--b77">77</span>
     <span class="transportkit-regensburg transportkit-regensburg--b78" title=".transportkit-regensburg--b78">78</span>
-    <span class="transportkit-regensburg transportkit-regensburg--b-extern"
-      title=".transportkit-regensburg--b-extern">930</span>
+    <span class="transportkit-regensburg transportkit-regensburg--bsub"
+      title=".transportkit-regensburg--bsub">930</span>
   </div>
 
-  <div class="salzburg">
+  <div class="city city-salzburg">
     <h2 id="salzburg">Salzburg</h2>
 
     <h3>Trolley busses</h3>
@@ -247,12 +273,12 @@
     <span class="transportkit-salzburg transportkit-salzburg--o2" title=".transportkit-salzburg--o2">2</span>
     <span class="transportkit-salzburg transportkit-salzburg--o3" title=".transportkit-salzburg--o3">3</span>
     <span class="transportkit-salzburg transportkit-salzburg--o4" title=".transportkit-salzburg--o4">4</span>
-    <span class="transportkit-salzburg transportkit-salzburg--o5" title=".transportkit-salzburg--o5">5</span>
+    <span class="transportkit-salzburg transportkit-salzburg--o5" title=".transportkit-salzburg--o5">5</span><br>
     <span class="transportkit-salzburg transportkit-salzburg--o6" title=".transportkit-salzburg--o6">6</span>
     <span class="transportkit-salzburg transportkit-salzburg--o7" title=".transportkit-salzburg--o7">7</span>
     <span class="transportkit-salzburg transportkit-salzburg--o8" title=".transportkit-salzburg--o8">8</span>
     <span class="transportkit-salzburg transportkit-salzburg--o9" title=".transportkit-salzburg--o9">9</span>
-    <span class="transportkit-salzburg transportkit-salzburg--o10" title=".transportkit-salzburg--o10">10</span>
+    <span class="transportkit-salzburg transportkit-salzburg--o10" title=".transportkit-salzburg--o10">10</span><br>
     <span class="transportkit-salzburg transportkit-salzburg--o12" title=".transportkit-salzburg--o12">12</span>
     <span class="transportkit-salzburg transportkit-salzburg--o14" title=".transportkit-salzburg--o14">14</span>
 
@@ -266,6 +292,7 @@
     <span class="transportkit-salzburg transportkit-salzburg--b" title=".transportkit-salzburg--b">23</span>
     <span class="transportkit-salzburg transportkit-salzburg--b" title=".transportkit-salzburg--b">840</span>
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>

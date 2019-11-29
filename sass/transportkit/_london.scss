@@ -1,7 +1,11 @@
 &-london {
-  @import "london/colors";
-  @import "london/tube";
+  @import "mixins/line";
 
+  @import "london/colors";
+  @import "defaults/global";
+
+  @import "london/overgrounds";
+  @import "london/tube";
   
   border: 0.15625em solid transparent;
   border-radius: 0.2em;
@@ -18,13 +22,4 @@
   min-width: 8em;
   text-align: center;
   text-size-adjust: 100%;
-
-  &:not(:last-of-type) {
-    margin-bottom: 0.46875em;
-    margin-right: 0.46875em;
-  }
-
-  &--contrast {
-    border-color: $textLight;
-  }
 }

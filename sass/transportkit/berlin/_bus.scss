@@ -1,7 +1,5 @@
 $bLines: (
-  'bus,b': $b,
-  'bus-express,busx,bx': $bX,
-  'bus-metro,busm,bm': $bM,
+  'b': $b
 );
 
 @each $line, $color in $bLines {
