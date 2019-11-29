@@ -1,9 +1,8 @@
-&--f,
-&--f10,
-&--f11,
-&--f12,
-&--f21,
-&--f23,
-&--f24 {
-  background-color: $f;
+
+$fLines: (
+  'f,f10,f11,f12,f21,f23,f24': $f
+);
+
+@each $line, $color in $fLines {
+  @include backgroundLine($line, $color);
 }

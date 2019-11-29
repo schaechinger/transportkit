@@ -1,14 +1,9 @@
-&--bus,
-&--b {
-  background-color: $b;
-}
-&--bus-express,
-&--busx,
-&--bx {
-  background-color: $bX;
-}
-&--bus-metro,
-&--busm,
-&--bm {
-  background-color: $bM;
+$bLines: (
+  'bus,b': $b,
+  'bus-express,busx,bx': $bX,
+  'bus-metro,busm,bm': $bM,
+);
+
+@each $line, $color in $bLines {
+  @include backgroundLine($line, $color);
 }

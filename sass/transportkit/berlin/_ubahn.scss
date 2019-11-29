@@ -1,32 +1,20 @@
-&--u {
-  background-color: $u;
+$sLines: (
+  'u': $u,
+  'u1': $u1,
+  'u2': $u2,
+  'u3': $u3,
+  'u4': $u4,
+  'u5,u55': $u5,
+  'u6': $u6,
+  'u7': $u7,
+  'u8': $u8,
+  'u9': $u9
+);
+
+@each $line, $color in $sLines {
+  @include backgroundLine($line, $color);
 }
-&--u1 {
-  background-color: $u1;
-}
-&--u2 {
-  background-color: $u2;
-}
-&--u3 {
-  background-color: $u3;
-}
+
 &--u4 {
-  background-color: $u4;
   color: $textDark;
-}
-&--u5,
-&--u55 {
-  background-color: $u5;
-}
-&--u6 {
-  background-color: $u6;
-}
-&--u7 {
-  background-color: $u7;
-}
-&--u8 {
-  background-color: $u8;
-}
-&--u9 {
-  background-color: $u9;
 }

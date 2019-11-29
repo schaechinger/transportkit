@@ -1,10 +1,9 @@
-&--u,
-&--u1 {
-  background-color: $u;
-}
-&--u2 {
-  background-color: $u2;
-}
-&--u3 {
-  background-color: $u3;
+$uLines: (
+  'u,u1': $u,
+  'u2': $u2,
+  'u3': $u3
+);
+
+@each $line, $color in $uLines {
+  @include backgroundLine($line, $color);
 }

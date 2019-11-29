@@ -1,71 +1,27 @@
-&--tram,
-&--t {
-  background-color: $t;
-}
-&--tram-peak,
-&--tp {
-  background-color: $textLight;
-  color: $t;
-  
-  &,
-  &.transportkit-munich--contrast {
-    border-color: $t;
-  }
-}
-&--t12 {
-  background-color: $t12;
-}
-&--t15 {
-  background-color: $textLight;
-  color: $t25;
-  
-  &,
-  &.transportkit-munich--contrast {
-    border-color: $t25;
-  }
-}
-&--t16 {
-  background-color: $t16;
-}
-&--t17 {
-  background-color: $t17;
-}
-&--t18 {
-  background-color: $t18;
-}
-&--t19 {
-  background-color: $t19;
-}
-&--t20 {
-  background-color: $t20;
-}
-&--t21 {
-  background-color: $t21;
-}
-&--t22 {
-  background-color: $textLight;
-  color: $t20;
+$tLines: (
+  'tram,t': $t,
+  't12': $t12,
+  't16': $t16,
+  't17': $t17,
+  't18': $t18,
+  't19': $t19,
+  't20': $t20,
+  't21': $t21,
+  't23': $t23,
+  't25': $t25,
+  't27': $t27
+);
+$tReverseLines: (
+  'tram-peak,tp': $t,
+  't15': $t25,
+  't22': $t20,
+  't28': $t27
+);
 
-  &,
-  &.transportkit-munich--contrast {
-    border-color: $t20;
-  }
+@each $line, $color in $tLines {
+  @include backgroundLine($line, $color);
 }
-&--t23 {
-  background-color: $t23;
-}
-&--t25 {
-  background-color: $t25;
-}
-&--t27 {
-  background-color: $t27;
-}
-&--t28 {
-  background-color: $textLight;
-  color: $t27;
 
-  &,
-  &.transportkit-munich--contrast {
-    border-color: $t27;
-  }
+@each $line, $color in $tReverseLines {
+  @include reverseLine($line, $color, 'munich');
 }

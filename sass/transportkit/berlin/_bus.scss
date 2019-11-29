@@ -1,3 +1,7 @@
-&--b {
-  background-color: $b;
+$bLines: (
+  'b': $b
+);
+
+@each $line, $color in $bLines {
+  @include backgroundLine($line, $color);
 }

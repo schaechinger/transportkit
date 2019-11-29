@@ -1,38 +1,24 @@
-&--bakerloo {
-  background-color: $tubeBakerloo;
-}
-&--central {
-  background-color: $tubeCentral;
-}
-&--circle {
-  background-color: $tubeCircle;
-}
-&--district {
-  background-color: $tubeDistrict;
-}
-&--hammersmith {
-  background-color: $tubeHammersmith;
-  color: $tubePiccadilly;
-}
-&--jubilee {
-  background-color: $tubeJubilee;
-}
-&--metropolitan {
-  background-color: $tubeMetropolitan;
-}
-&--northern {
-  background-color: $tubeNorthern;
-}
-&--piccadilly {
-  background-color: $tubePiccadilly;
-}
-&--victoria {
-  background-color: $tubeVictoria;
-}
-&--waterloo {
-  background-color: $tubeWaterloo;
+$tubeLines: (
+  'bakerloo': $tubeBakerloo,
+  'central': $tubeCentral,
+  'circle': $tubeCircle,
+  'district': $tubeDistrict,
+  'hammersmith': $tubeHammersmith,
+  'jubilee': $tubeJubilee,
+  'metropolitan': $tubeMetropolitan,
+  'northern': $tubeNorthern,
+  'piccadilly': $tubePiccadilly,
+  'victoria': $tubeVictoria,
+  'waterloo': $tubeWaterloo
+);
+
+@each $line, $color in $tubeLines {
+  @include backgroundLine($line, $color);
 }
 
+&--hammersmith {
+  color: $tubePiccadilly;
+}
 &--circle,
 &--victoria,
 &--waterloo {

@@ -4,41 +4,27 @@
   <title>TransportKit Examples</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
   <link rel="stylesheet" href="../styles/transportkit.min.css">
-  <!-- https://static.schaechinger.com/projects/transportkit/latest/transportkit.min.css"> -->
-  <style>
-    body {
-      font: 1rem Helvetica, Arial, sans-serif;
-      margin: 0;
-      padding: 1.25rem;
-    }
-
-    h2 {
-      margin-top: 3rem;
-    }
-
-    h3 {
-      margin-top: 1rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <h1>TransportKit Examples</h1>
 
-  <h2>Available Cities</h2>
-
-  <ul>
-    <li><a href="#munich">Munich</a></li>
-    <li><a href="#berlin">Berlin</a></li>
-    <li><a href="#london">London</a></li>
-    <li><a href="#nyc">New York City</a></li>
-    <li><a href="#nuremberg">Nuremberg</a></li>
-    <li><a href="#regensburg">Regensburg</a></li>
+  <ul class="city-select">
+    <li class="munich"><a href="#munich">Munich</a></li>
+    <li class="berlin"><a href="#berlin">Berlin</a></li>
+    <li class="london"><a href="#london">London</a></li>
+    <li class="nyc"><a href="#nyc">New York City</a></li>
+    <li class="nuremberg"><a href="#nuremberg">Nuremberg</a></li>
+    <li class="regensburg"><a href="#regensburg">Regensburg</a></li>
   </ul>
 
   <hr>
 
-  <div class="munich">
+  <input type="checkbox" id="mode-toggle" name="mode-toggle">
+  <label for="mode-toggle">Dark mode (contrast)</label>
+
+  <div class="city city-munich">
     <h2 id="munich">Munich</h2>
 
     <h3>U-Bahn</h3>
@@ -77,19 +63,20 @@
     <h4>Colored Style</h4>
     <span class="transportkit-munich transportkit-munich--t12" title=".transportkit-munich--t12">12</span>
     <span class="transportkit-munich transportkit-munich--t15" title=".transportkit-munich--t15">15</span>
-    <span class="transportkit-munich transportkit-munich--t17" title=".transportkit-munich--t17">17</span>
-    <span class="transportkit-munich transportkit-munich--t18" title=".transportkit-munich--t18">18</span><br>
+    <span class="transportkit-munich transportkit-munich--t16" title=".transportkit-munich--t16">16</span>
+    <span class="transportkit-munich transportkit-munich--t17" title=".transportkit-munich--t17">17</span><br>
+    <span class="transportkit-munich transportkit-munich--t18" title=".transportkit-munich--t18">18</span>
     <span class="transportkit-munich transportkit-munich--t19" title=".transportkit-munich--t19">19</span>
     <span class="transportkit-munich transportkit-munich--t20" title=".transportkit-munich--t20">20</span>
-    <span class="transportkit-munich transportkit-munich--t21" title=".transportkit-munich--t21">21</span>
-    <span class="transportkit-munich transportkit-munich--t22" title=".transportkit-munich--t22">22</span><br>
+    <span class="transportkit-munich transportkit-munich--t21" title=".transportkit-munich--t21">21</span><br>
+    <span class="transportkit-munich transportkit-munich--t22" title=".transportkit-munich--t22">22</span>
     <span class="transportkit-munich transportkit-munich--t23" title=".transportkit-munich--t23">23</span>
     <span class="transportkit-munich transportkit-munich--t25" title=".transportkit-munich--t25">25</span>
-    <span class="transportkit-munich transportkit-munich--t27" title=".transportkit-munich--t27">27</span>
+    <span class="transportkit-munich transportkit-munich--t27" title=".transportkit-munich--t27">27</span><br>
     <span class="transportkit-munich transportkit-munich--t28" title=".transportkit-munich--t28">28</span>
   </div>
 
-  <div class="berlin">
+  <div class="city city-berlin">
     <h2 id="berlin">Berlin</h2>
 
     <h3>U-Bahn</h3>
@@ -125,7 +112,7 @@
     <span class="transportkit-berlin transportkit-berlin--s9" title=".transportkit-berlin--s9">S9</span>
   </div>
 
-  <div class="london">
+  <div class="city city-london">
     <h2 id="london">London</h2>
 
     <h3>Tube</h3>
@@ -160,7 +147,7 @@
     <span class="transportkit-london transportkit-london--tram" title=".transportkit-london--tram">Tram</span>
   </div>
 
-  <div class="nyc">
+  <div class="city city-nyc">
     <h2 id="nyc">New York City</h2>
 
     <h3>Subway</h3>
@@ -191,7 +178,7 @@
     <span class="transportkit-nyc transportkit-nyc--w" title=".transportkit-nyc--w">W</span>
   </div>
 
-  <div class="nuremberg">
+  <div class="city city-nuremberg">
     <h2 id="nuremberg">Nuremberg</h2>
 
     <h3>U-Bahn</h3>
@@ -219,7 +206,7 @@
     <span class="transportkit-nuremberg transportkit-nuremberg--r31" title=".transportkit-nuremberg--r31">R 31</span>
   </div>
 
-  <div class="regensburg">
+  <div class="city city-regensburg">
     <h2 id="regensburg">Regensburg</h2>
 
     <h3>Busses</h3>
@@ -276,6 +263,8 @@
     <span class="transportkit-regensburg transportkit-regensburg--bsub"
       title=".transportkit-regensburg--bsub">930</span>
   </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

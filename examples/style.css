@@ -1,0 +1,39 @@
+body {
+  font: 1rem Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 1.25rem;
+}
+body.dark {
+  background-color: #111;
+  color: #fff;
+}
+
+h2 {
+  margin-top: 3rem;
+}
+h3 {
+  margin-top: 1rem;
+}
+
+ul.city-select {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.city-select li {
+  display: inline-block;
+  padding: 0.125rem 0.25rem;
+}
+ul.city-select li a,
+ul.city-select li a:active,
+ul.city-select li a:focus {
+  color: #555;
+  outline: 0;
+}
+body.dark ul.city-select li a {
+  color: #ddd;
+}
+
+.city {
+  display: none;
+}

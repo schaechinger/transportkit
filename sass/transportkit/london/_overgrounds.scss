@@ -1,13 +1,10 @@
-&--overground {
-  background-color: $overground;
-}
-&--tflrail {
-  background-color: $tflRail;
-}
-&--dlr {
-  background-color: $dlr;
-}
-&--tram,
-&--t {
-  background-color: $tram;
+$overgroundLines: (
+  'overground': $overground,
+  'tflrail': $tflRail,
+  'dlr': $dlr,
+  'tram,t': $t
+);
+
+@each $line, $color in $overgroundLines {
+  @include backgroundLine($line, $color);
 }

@@ -1,4 +1,6 @@
 &-berlin {
+  @import "mixins/line";
+
   @import "defaults/germany";
   @import "berlin/colors";
 
