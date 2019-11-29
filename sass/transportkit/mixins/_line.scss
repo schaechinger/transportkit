@@ -6,7 +6,7 @@
 }
 
 // styles a line with colored text and border
-@mixin reverseLine($line, $color, $city) {
+@mixin flipLine($line, $color, $city) {
   &--#{str-replace($line)} {
     background-color: $textLight;
     color: $color;
@@ -26,9 +26,10 @@
     border-right-color: $bottomColor;
     border-top-color: $topColor;
     background: linear-gradient(to bottom right, $topColor 0, $topColor 50%, $bottomColor 50%, $bottomColor 100%);
-  }
-  &.transportkit-#{$city}--contrast {
-    border-color: $textLight;
+
+    &.transportkit-#{$city}--contrast {
+      border-color: $textLight;
+    }
   }
 }
 

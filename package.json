@@ -12,7 +12,8 @@
     "build:nuremberg": "node-sass sass/nuremberg.scss styles/transportkit-nuremberg.min.css --output-style compressed",
     "build:nyc": "node-sass sass/nyc.scss styles/transportkit-nyc.min.css --output-style compressed",
     "build:regensburg": "node-sass sass/regensburg.scss styles/transportkit-regensburg.min.css --output-style compressed",
-    "build:salzburg": "node-sass sass/salzburg.scss styles/transportkit-salzburg.min.css --output-style compressed"
+    "build:salzburg": "node-sass sass/salzburg.scss styles/transportkit-salzburg.min.css --output-style compressed",
+    "dev": "node-sass sass/all.scss styles/transportkit.min.css --output-style compressed -w"
   },
   "repository": {
     "type": "git",
@@ -29,13 +30,14 @@
     "metro",
     "bus",
     "tram",
-    "mvv",
-    "mvg",
     "mta",
-    "vgn",
+    "mvg",
+    "mvv",
     "bvg",
     "rvv",
-    "svv"
+    "svv",
+    "tfl",
+    "vgn"
   ],
   "author": "Manuel Schaechinger <manuel@schaechinger.com>",
   "license": "MIT",

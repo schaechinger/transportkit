@@ -2,24 +2,19 @@
 
 ## Supported Cities
 
+* Munich
 * Berlin
 * London
-* Munich
 * New York City
 * Nuremberg
 * Regensburg
+* Salzburg
 
 ## Example Page
 
-You can have a look at the styles here: [schaechinger.com/transportkit](https://www.schaechinger.com/tansportkit).
+You can have a look at the styles here: [schaechinger.com/transportkit](https://www.schaechinger.com/transportkit).
 
-## Use CSS
-
-The current versions in CSS format are located in the `styles` folder. \
-Each supported city has it's own file if you only want to use styles for one city.
-If you cloned the repository and edited the SASS files make sure you build the project first.
-
-## Build Manually
+## Build CSS
 
 First clone the repository to your machine:
 
@@ -36,6 +31,25 @@ To build the project run:
 npm i
 npm run build
 ```
+
+## Use CSS
+
+The current versions in CSS format are located in the `styles` folder after the build. \
+Each supported city has it's own file if you only want to use styles for one city.
+If you cloned the repository and edited the SASS files make sure you build the project first.
+
+### Download CSS
+
+However, if you want to use the CSS files right without compiling, you can refer to these links to get the styles for all cities or insert the lower case city name into the second link:
+
+* [All cities](https://static.schaechinger.com/projects/transportkit/latest/transportkit.min.css)
+* [Munich](https://static.schaechinger.com/projects/transportkit/latest/transportkit-munich.min.css)
+* [Berlin](https://static.schaechinger.com/projects/transportkit/latest/transportkit-berlin.min.css)
+* [London](https://static.schaechinger.com/projects/transportkit/latest/transportkit-london.min.css)
+* [New York City](https://static.schaechinger.com/projects/transportkit/latest/transportkit-nyc.min.css)
+* [Nuremberg](https://static.schaechinger.com/projects/transportkit/latest/transportkit-nuremberg.min.css)
+* [Regensburg](https://static.schaechinger.com/projects/transportkit/latest/transportkit-regensburg.min.css)
+* [Salzburg](https://static.schaechinger.com/projects/transportkit/latest/transportkit-salzburg.min.css)
 
 ## Licenses
 

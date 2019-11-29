@@ -11,7 +11,7 @@ $tLines: (
   't25': $t25,
   't27': $t27
 );
-$tReverseLines: (
+$tFlipLines: (
   'tram-peak,tp': $t,
   't15': $t25,
   't22': $t20,
@@ -22,6 +22,6 @@ $tReverseLines: (
   @include backgroundLine($line, $color);
 }
 
-@each $line, $color in $tReverseLines {
-  @include reverseLine($line, $color, 'munich');
+@each $line, $color in $tFlipLines {
+  @include flipLine($line, $color, 'munich');
 }
