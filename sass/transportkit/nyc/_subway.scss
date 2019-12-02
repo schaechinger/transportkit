@@ -1,14 +1,14 @@
 $subwayLines: (
-  '1,2,3': $subway123,
-  '4,5,6,6d::before': $subway456,
-  '7,7d::before': $subway7,
-  'a,c,e': $subwayACE,
-  'b,d,f,m': $subwayBDFM,
-  'g': $subwayG,
-  'j,z': $subwayJZ,
-  'l': $subwayL,
-  's': $subwayS,
-  'n,q,r,w': $subwayNQRW,
+  "1,2,3": $subway123,
+  "4,5,6,6d::before": $subway456,
+  "7,7d::before": $subway7,
+  "a,c,e": $subwayACE,
+  "b,d,f,m": $subwayBDFM,
+  "g": $subwayG,
+  "j,z": $subwayJZ,
+  "l": $subwayL,
+  "s": $subwayS,
+  "n,q,r,w": $subwayNQRW
 );
 
 @each $line, $color in $subwayLines {
@@ -30,11 +30,11 @@ $subwayLines: (
       border-color: $textLight;
     }
   }
-  
+
   &::before {
     border: 0.125em solid transparent;
     box-sizing: content-box;
-    content: '';
+    content: "";
     height: 1.25em;
     transform: rotate(45deg);
     position: absolute;
