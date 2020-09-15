@@ -202,14 +202,14 @@ To enable dark / contrast mode, add the following class: `transportkit-{city}--c
 | 1 | `transportkit-regensburg--b1` | ![1](https://static.schaechinger.com/projects/transportkit/latest/examples/transportkit-regensburg--b1.png) |
 | 2 | `transportkit-regensburg--b2` | ![2](https://static.schaechinger.com/projects/transportkit/latest/examples/transportkit-regensburg--b2.png) |
 | 3 | `transportkit-regensburg--b3` | ![3](https://static.schaechinger.com/projects/transportkit/latest/examples/transportkit-regensburg--b3.png) |
-| 4<br>4A | `transportkit-regensburg--b4`<br>`transportkit-regensburg--b4a` | ![4](https://static.schaechinger.com/projects/transportkit/latest/examples/transportkit-regensburg--b4.png) |
-| 5<br>5A | `transportkit-regensburg--b5`<br>`transportkit-regensburg--b5a` | ![5](https://static.schaechinger.com/projects/transportkit/latest/examples/transportkit-regensburg--b5.png) |
+| 4<br>4A | `transportkit-regensburg--b4`<br>`transportkit-regensburg--b4a` | ![4](https://static.schaechinger.com/projects/transportkit/latest/examples/transportkit-regensburg--b4.png) ![4A](https://static.schaechinger.com/projects/transportkit/latest/examples/transportkit-regensburg--b4a.png) |
+| 5<br>5A | `transportkit-regensburg--b5`<br>`transportkit-regensburg--b5a` | ![5](https://static.schaechinger.com/projects/transportkit/latest/examples/transportkit-regensburg--b5.png) ![5A](https://static.schaechinger.com/projects/transportkit/latest/examples/transportkit-regensburg--b5a.png) |
 | 6 | `transportkit-regensburg--b6` | ![6](https://static.schaechinger.com/projects/transportkit/latest/examples/transportkit-regensburg--b6.png) |
 | 7 | `transportkit-regensburg--b7` | ![7](https://static.schaechinger.com/projects/transportkit/latest/examples/transportkit-regensburg--b7.png) |
-| 8<br>8A<br>8B | `transportkit-regensburg--b8`<br>`transportkit-regensburg--b8a`<br>`transportkit-regensburg--b8b` | ![8](https://static.schaechinger.com/projects/transportkit/latest/examples/transportkit-regensburg--b8.png) |
+| 8<br>8A<br>8B | `transportkit-regensburg--b8`<br>`transportkit-regensburg--b8a`<br>`transportkit-regensburg--b8b` | ![8](https://static.schaechinger.com/projects/transportkit/latest/examples/transportkit-regensburg--b8.png) ![8A](https://static.schaechinger.com/projects/transportkit/latest/examples/transportkit-regensburg--b8a.png) ![8B](https://static.schaechinger.com/projects/transportkit/latest/examples/transportkit-regensburg--b8b.png) |
 | 9 | `transportkit-regensburg--b9` | ![9](https://static.schaechinger.com/projects/transportkit/latest/examples/transportkit-regensburg--b9.png) |
 | 10 | `transportkit-regensburg--b10` | ![10](https://static.schaechinger.com/projects/transportkit/latest/examples/transportkit-regensburg--b10.png) |
-| 11<br>11A | `transportkit-regensburg--b11`<br>`transportkit-regensburg--b11a` | ![11](https://static.schaechinger.com/projects/transportkit/latest/examples/transportkit-regensburg--b11.png) |
+| 11<br>11A | `transportkit-regensburg--b11`<br>`transportkit-regensburg--b11a` | ![11](https://static.schaechinger.com/projects/transportkit/latest/examples/transportkit-regensburg--b11.png) ![11A](https://static.schaechinger.com/projects/transportkit/latest/examples/transportkit-regensburg--b11a.png) |
 | 12 | `transportkit-regensburg--b12` | ![12](https://static.schaechinger.com/projects/transportkit/latest/examples/transportkit-regensburg--b12.png) |
 | 13 | `transportkit-regensburg--b13` | ![13](https://static.schaechinger.com/projects/transportkit/latest/examples/transportkit-regensburg--b13.png) |
 | 14 | `transportkit-regensburg--b14` | ![14](https://static.schaechinger.com/projects/transportkit/latest/examples/transportkit-regensburg--b14.png) |
