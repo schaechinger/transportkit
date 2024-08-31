@@ -12,7 +12,7 @@
 
 ## Example Page
 
-You can have a look at the styles here: [schaechinger.com/transportkit](https://www.schaechinger.com/transportkit).
+You can have a look at the styles here: [schaechinger.com/projects/transportkit](https://www.schaechinger.com/projects/transportkit).
 
 ## Build CSS
 
